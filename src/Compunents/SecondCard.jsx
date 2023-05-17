@@ -8,7 +8,9 @@ const SecondCard = () => {
       <div className="lg:w-72  px-6 rounded-[50px] flex flex-col gap-y-3 linear text-white">
         {firstData.map((items) => (
           <>
-            <h1 className="text-center text-[24px] font-[700] mt-2">{items.heading}</h1>
+            <h1 className="text-center text-[24px] font-[700] mt-2">
+              {items.heading}
+            </h1>
             <p className="font-[600] text-[12px] leading-[14px]">
               <span className="font-bold">Genrul Description</span>
               {items.paraghraphOne}
@@ -17,19 +19,27 @@ const SecondCard = () => {
               {items.paraghraphTwo}
             </p>
             <div className="flex justify-between">
-              <p className="flex flex-col font-semibold text-[12px]  h-4 ">
-                Name<span className="  text-[12px] font-normal">$Bayra</span>
-              </p>
-              <p className="flex flex-col font-semibold text-[12px]  h-4">
-                Type<span className="  text-[12px] font-normal">XPR</span>
-              </p>
-
-              <p className="flex flex-col font-semibold text-[12px]  h-4">
-                Symbol<span className=" font-normal text-[12px]">$Bayra</span>
-              </p>
-              <p className="flex flex-col font-semibold text-[12px]  h-4">
-                Platform<span className=" font-normal text-[12px]">Proton</span>
-              </p>
+              <div className="flex items-center ">
+                <div className="flex flex-col ">
+                  <p className="font-semibold text-[12px]  h-4 ">Name</p>
+                  <p className="  text-[12px] font-normal">$Bayra</p>
+                </div>
+                <div className="h-5 w-[1px] bg-gray-300 ml-7 "></div>
+              </div>
+              <div className="flex items-center">
+                <div className="flex flex-col ">
+                  <p className="font-semibold text-[12px]  h-4 ">Name</p>
+                  <p className="  text-[12px] font-normal">$Bayra</p>
+                </div>
+                <div className="h-5 w-[1px] bg-gray-300 ml-7"></div>
+              </div>
+              <div className="flex items-center">
+                <div className="flex flex-col ">
+                  <p className="font-semibold text-[12px]  h-4 ">Name</p>
+                  <p className="  text-[12px] font-normal">$Bayra</p>
+                </div>
+                {/* <div className="h-5 w-[1px] bg-gray-300 ml-2"></div> */}
+              </div>
             </div>
             <p className="text-center mt-5 font-[500] text-[12px]">
               General Release: 1,000,000,000 BAYRA
@@ -59,37 +69,38 @@ const SecondCard = () => {
               Read More
             </button>
       </div> */}
-      {
-        secondData.map((items)=>(
-          <div className="w-72  px-6 rounded-[50px] flex flex-col gap-y-3 linear text-white">
-          <h1 className="text-center font-[700] text-[24px] mt-2">{items.SecondHeading}</h1>
-          <p className="font-[600] text-[12px]  leading-[14px]">{items.secondParaghraph}</p>
+      {secondData.map((items) => (
+        <div className="w-72  px-6 rounded-[50px] flex flex-col gap-y-3 linear text-white">
+          <h1 className="text-center font-[700] text-[24px] mt-2">
+            {items.SecondHeading}
+          </h1>
+          <p className="font-[600] text-[12px]  leading-[14px]">
+            {items.secondParaghraph}
+          </p>
           <button
-              type="button"
-              className="bg-[#BF08DE] w-full h-[45px] mt-[115px] rounded-[14px] text-[12px]"
-            >
+            type="button"
+            className="bg-[#BF08DE] w-full h-[45px] mt-[115px] rounded-[14px] text-[12px]"
+          >
             Read More
-            </button>
-          </div>
-
-        ))
-      }
-      {
-        thirdData.map((items)=>(
-          <div className="w-72  px-6 rounded-[50px] flex flex-col gap-y-3 linear text-white">
-          <h1 className="text-center font-[700] text-[24px] mt-2">{items.thirdHeading}</h1>
-          <p className="font-[600] text-[12px]  leading-[14px]">{items.thirdParaghraph}</p>
+          </button>
+        </div>
+      ))}
+      {thirdData.map((items) => (
+        <div className="w-72  px-6 rounded-[50px] flex flex-col gap-y-3 linear text-white">
+          <h1 className="text-center font-[700] text-[24px] mt-2">
+            {items.thirdHeading}
+          </h1>
+          <p className="font-[600] text-[12px]  leading-[14px]">
+            {items.thirdParaghraph}
+          </p>
           <button
-              type="button"
-              className="bg-[#BF08DE] w-full h-[45px] mt-[75px] rounded-[14px] text-[12px]"
-            >
+            type="button"
+            className="bg-[#BF08DE] w-full h-[45px] mt-[75px] rounded-[14px] text-[12px]"
+          >
             Read More
-            </button>
-          </div>
-
-        ))
-      }
-     
+          </button>
+        </div>
+      ))}
     </div>
   );
 };
