@@ -1,0 +1,39 @@
+/* .bg-image{
+    background: url('../../Images/SectionTwo.png');
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(180.64deg, rgba(0, 0, 0, 0) -15.17%, rgba(11, 11, 11, 0.525006) 29.31%, rgba(18, 18, 18, 0.86) 78.32%);
+} */
+
+.bg-container {
+    position: relative;
+  }
+  
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Images/SectionTwo.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity value as needed */
+    z-index: -1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Additional styling for text */
+  .content h1 {
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .content p {
+    color: #fff;
+  }
+  
