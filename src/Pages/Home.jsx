@@ -1,15 +1,13 @@
 import React from "react";
-import Section3 from "../Compunents/Section3";
-import Section1 from "../Compunents/Section1";
-import Section2 from "../Compunents/Section2";
-import Section4 from "../Compunents/Section4";
-import Corner from "../Compunents/Corner";
+import Section3 from "../Compunents/SectionThree";
+import Section1 from "../Compunents/SectionOne";
+import Section2 from "../Compunents/SectionTwo";
+import Section4 from "../Compunents/SectionFour";
 
 const Home = () => {
   return (
-   <div className=" bg-black flex flex-col gap-y-6 px-20 py-5">
+   <div className=" bg-black flex flex-col gap-y-6 w-[90%] justify-center py-5 m-auto">
    <Section1/>
-   {/* <Corner/> */}
   <Section2/>
   <Section4/>
     <Section3/>

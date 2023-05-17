@@ -10,7 +10,7 @@ const Section1 = () => {
     <>
       <div className="relative">
         <div className="bg-img relative w-full flex gap-y-3 lg:gap-y-0 flex-col lg:justify-center  lg:h-[584px] rounded-2xl ">
-          <div className="inner-bg px- md:px-0 w-[90%] sm:w-[90%] py-10 lg:py-0 md:w-96 mt-2  h-44  lg:w-[877px]  lg:h-[325px] mx-auto relative">
+          <div className="inner-bg  md:px-0 w-full  sm:w-[90%] py-10 lg:py-0 md:w-96 mt-2  h-44  lg:w-[877px]  lg:h-[325px] mx-auto relative">
             <div className=" absolute left-96 hidden lg:block -right-0 top-16 text-[24px] font-[600] w-8/12 text-white ">
               <p>
                 Unlesh the power of NFT GameFi <br /> Trade,Earn and Battle
@@ -42,21 +42,36 @@ const Section1 = () => {
         </div>
         <div className="flex   px-3 absolute  top-[87%] left-[77.4%] gap-x-2 right-0 bottom-0">
           <div className="relative hidden lg:block">
-            <div className="corner-bg h-[75px] w-20 relative rounded-md"></div>
+            <div className="corner-Two h-[75px] w-20 relative rounded-md">
+            <div className="flex items-center p-3">
+                <div className="bg-[#BF08DE] w-2 h-2"></div>
+                <h3 className="text-[12px] text-white font-bold">Bayra</h3>
+              </div>
+            </div>
             <div className=" p-1 bg-[#424242] absolute w-6 h-4 top-[58px] left-14 right-0 bottom-0">
               <div className="bg-icons w-3 h-2 m-auto" />
             </div>
           </div>
           <div>
           <div className="relative hidden lg:block">
-            <div className="corner-bg h-[75px] w-20 relative rounded-md"></div>
+            <div className="corner-bg h-[75px] w-20 relative rounded-md">
+              <div className="flex items-center p-3">
+                <div className="bg-[#BF08DE] w-2 h-2"></div>
+                <h3 className="text-[8px] text-white font-bold">Crypfennec.</h3>
+              </div>
+            </div>
             <div className=" p-1 bg-[#424242] absolute w-6 h-4 top-[58px] left-14 right-0 bottom-0">
               <div className="bg-cup w-3 h-2 m-auto" />
             </div>
           </div>
           </div>
           <div className="relative hidden lg:block">
-            <div className="corner-bg h-[75px] w-20 relative rounded-md"></div>
+            <div className="corner-Three h-[75px] w-20 relative rounded-md">
+            <div className="flex items-center p-3">
+                <div className="bg-[#BF08DE] w-2 h-2"></div>
+                <h3 className="text-[12px] text-white font-bold">Bayra</h3>
+              </div>
+            </div>
             <div className=" p-1 bg-[#424242] absolute w-6 h-4 top-[58px] left-14 right-0 bottom-0">
               <div className="bg-game w-3 h-2 m-auto" />
             </div>
